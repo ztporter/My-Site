@@ -279,10 +279,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-5">
-					<h3 class="text-center">Generating 3D Models using Agisoft</h3>
-					<p style="font-size:16px">After downloading all of the images off of the SD card we would use Agisoft to generate a 3D model of the surveyed site. First all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, after which a mesh is created which has the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto which is a detailed 3D model. </p>
-					<div id="MissionCarousel" class="carousel slide" data-ride="carousel">
+				<div class="col-md-6">
+					<h3 class="text-center">Mission Planning and Execution</h3>
+					<p style="font-size:16px">Once the system is fully operational with all sensors on the UAV calibrated and all batteries fully charged Rexacopter is ready for its mission. The Mission Planner software makes planning an autonomous flight very straightforward with its Survey Grid tool. To start, create a fence around the desired area using the polygon tool, then using that as the boundary the survey grid tool can create all the waypoints we need to work a grid at a specified height of 9m and distance between lines of 6m. Once all the waypoints are generated a quick check to remove all unnecessary commands like take picture or loiter and adding a return to launch command are all that's necessary to finish the flight plan. With this finalized the waypoints get written to the UAV, and it will carry out the mission as soon as it's placed in auto mode.</p>
+					<div id="MissionCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
 							<li data-target="#MissionCarousel" data-slide-to="0" class="active"></li>
@@ -326,11 +326,11 @@
 						 </a>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
+				<div class="col-md-1"></div>
 				<div class="col-md-5">
 					<h3 class="text-center">Generating 3D Models using Agisoft</h3>
 					<p style="font-size:16px">After downloading all of the images off of the SD card we would use Agisoft to generate a 3D model of the surveyed site. First all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, after which a mesh is created which has the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto which is a detailed 3D model. </p>
-					<div id="AgisoftCarousel" class="carousel slide" data-ride="carousel">
+					<div id="AgisoftCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
 							<li data-target="#AgisoftCarousel" data-slide-to="0" class="active"></li>
@@ -383,6 +383,22 @@
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
+			<div class="row">
+	            <div class="col-md-2"></div>
+	            <div class="col-sm-12 col-md-8">
+	            	<div class="alert alert-success" role="alert">
+						<h1>Rexacopter Demo Video <small>The Story of Rex</small></h1>
+					</div>
+
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HIy0boUVkho" alt="Rexacopter Video"></iframe>
+					</div>
+	               
+	            </div>
+			</div>
+		</div>
 
 		<div class="container-fluid">
 			<div class="well">
