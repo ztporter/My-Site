@@ -54,11 +54,11 @@
 					<div class="alert alert-success" role="alert">
 						<h1>Senior Design Project <small>Team Rexacopter</small></h1>
 					</div>
-					<p style="font-size:16px">I got to work along with my fellow teammates (Troy Fields, Mike Brancato, Michael Sandoval, and Mike Rudy) on designing a multi-rotor Unmanned Aerial Vehicle that was capable of aerially 3D mapping an archaeological dig site. The scope of our project was to design and build a functional system within two semesters (roughly 8 months). Our first phase of the project was focused on designing engineering requirements for the system such as the detail of the generated models, the duration for missions, the resolution of the imaging system, etc. After we had all of our requirements established we began researching smilar projects and the various subsystems that would make up the project including the imaging system, the UAV frame and mechanical parts, the autopilot software, and the ground station software. Once we had completed our research we finalized a parts list and purchased all necessary components and 3D printed some additional ones.</p>  
+					<p style="font-size:16px">I got to work along with my fellow teammates (Troy Fields, Mike Brancato, Michael Sandoval, and Mike Rudy) on designing a multi-rotor Unmanned Aerial Vehicle that was capable of aerially 3D mapping an archaeological dig site. The scope of our project was to design and build a functional system within two semesters (roughly 8 months). Our first phase of the project was focused on designing engineering requirements for the system such as the detail of the generated models, the duration for missions, the resolution of the imaging system, etc. After we had all of our requirements established we began researching smilar projects and the various subsystems that would make up the project including the imaging system, the UAV frame and mechanical parts, the autopilot software, and the ground station software. Once we had completed our research we finalized a parts list and purchased all necessary components and 3D printed some additional ones. We selected the Mission Planner ground station software and the APM Copter autopilot software since they had been proven to be effective in similar mapping projects. Agisoft Photoscan was selected for the photogrammetry software used to render the 3D models from the images because its main competitor, Pix4D, was out of our price range.</p>  
 				</div>
 				<div class="col-md-4">
 					<img src="rexacopter.jpg" class="img-rounded" class="img-responsive" style="width:100%;height:auto" alt="Rexacopter in flight">
-					<p class="text-center" style="font-size:16px">Rexacopter taking off</p>
+					<p class="text-center" style="font-size:16px"><b>Rexacopter taking off</b></p>
 				</div>
 			</div>
 			<br>
@@ -141,32 +141,20 @@
 					</table>
 				</div>
 				<div class="col-md-6">
-					<br>
-					<br>
-					<br>
-					<img src="rexacopter_close.jpg" class="img-rounded" class="img-responsive" style="width:100%;height:auto" alt="Rexacopter close up">
-					<p class="text-center" style="font-size:16px">Our final product: Rexacopter in all of it's glory</p>
-				</div>
-			</div>
-			<br>	
-			<div class="row">
-				<h3>3D Printed Parts</h3>
-				<p style="font-size:16px">Our team had access to several MakerBot Replicator 2x's and we used Sketchup to create several parts used in our project including the GPS mast, prop guards, and the camera mount.</p>
-				
-				<div class="col-md-3"></div>
-				<div class="col-md-6">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<h3 class="text-center">3D Printed Parts</h3>
+					<p style="font-size:16px">Our team had access to several MakerBot Replicator 2x's and we used SketchUp to create several parts used in our project including the GPS mast, prop guards, and the camera mount.</p>
+					<div id="3DCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-							<li data-target="#myCarousel" data-slide-to="3"></li>
-							<li data-target="#myCarousel" data-slide-to="4"></li>
-							<li data-target="#myCarousel" data-slide-to="5"></li>
-							<li data-target="#myCarousel" data-slide-to="6"></li>
-							<li data-target="#myCarousel" data-slide-to="7"></li>
-							<li data-target="#myCarousel" data-slide-to="8"></li>
+							<li data-target="#3DCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#3DCarousel" data-slide-to="1"></li>
+							<li data-target="#3DCarousel" data-slide-to="2"></li>
+							<li data-target="#3DCarousel" data-slide-to="3"></li>
+							<li data-target="#3DCarousel" data-slide-to="4"></li>
+							<li data-target="#3DCarousel" data-slide-to="5"></li>
+							<li data-target="#3DCarousel" data-slide-to="6"></li>
+							<li data-target="#3DCarousel" data-slide-to="7"></li>
+							<li data-target="#3DCarousel" data-slide-to="8"></li>
 						</ol>
 
 						<!-- Wrapper for slides -->
@@ -237,11 +225,11 @@
 						</div>
 
 						<!-- Left and Right Controls -->
-						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<a class="left carousel-control" href="#3DCarousel" role="button" data-slide="prev">
 							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 						    <span class="sr-only">Previous</span>
 						 </a>
-						 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						 <a class="right carousel-control" href="#3DCarousel" role="button" data-slide="next">
 						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 						    <span class="sr-only">Next</span>
 						 </a>
@@ -249,8 +237,152 @@
 				</div>
 			</div>
 			<br>
-		</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Final Design</h3>
+					<p style="font-size:16px">After we had purchased/printed all of our parts we assembled the UAV according to the design diagram shown. Assembly involved soldering on the various connectors, revising models for the printed parts, securing all of the components to the frame,and a great deal of headache trying to get everything positioned and calibrated correctly. The process was made much easier by the excellent documentation provided by APM Copter which you can check out <a href="http://copter.ardupilot.com/wiki/common-autopilots/common-pixhawk-overview/">here</a>. Since there are many tutorials for assembling quadcopters I won't cover every step but some things to keep in mind are:</p>
+						<ul style="font-size:16px">
+							<li>There are two different types of props, that spin different directions</li>
+							<li>Switching any two wires going from the ESC's to the motors changes there direction</li>
+							<li>Mixing channels with the radio allows you to get more than 3 modes for one RC channel</li>
+							<li>Keeping the Pixhawk and GPS secured prevents constantly needing to recalibrate them</li>
+							<li>Buy more batteries and chargers than you think, you run through them quickly</li>
+						</ul>
+					<p style="font-size:16px">Also, we learned several important safety lessons from assembling and testing the quadcopter so here are some valuable lessons learned at our expense for your safety:</p>
+						<ul>
+							<li><div class="alert alert-danger" role="alert">Be extremely careful testing quadcopters, they are spinning death machines</div></li>
+							<li><div class="alert alert-danger" role="alert">Remove the propellers before calibrating ESC's and motors</div></li>
+							<li><div class="alert alert-danger" role="alert">Understand what each flight mode does before using it</div></li>
+							<li><div class="alert alert-danger" role="alert">Fly far away from any people or damageable property</div></li>
+						</ul>
+					<p style="font-size:16px">A lot of that is probably common sense, but quadcopters can be very dangerous if you're not careful about how you use them.
+					<br>
+					<br>
+					Our camera isn't shown on the design diagram because it isn't electrically connected to the UAV in any way, we simply secure it to the quadcopter using a custom camera mount. The camera takes a simple CHDK script that continuously takes photos after a short delay and occassionally refocuses to compensate for changes in height during a flight. All of these images are stored on an SD card which is removed after flight and the images are loaded onto a computer and run through Agisoft's photo stitching software to generate the 3D Model. 
+					</p>
+				</div>
+				<div class="col-md-8">
+					<br>
+					<br>
+					<img src="breakdown.jpg" class="img-rounded" class="img-responsive" style="width:100%;height:auto" alt="Design Breakdown of UAV">
+					<p class="text-center" style="font-size:16px"><b>A breakdown design diagram of the UAV</b></p>
+					<br>
+					<br>
+					<img src="motor_config.jpg" class="img-rounded" class="img-responsive" style="width:100%;height:auto" alt="Motor Configuration Guide">
+					<p class="text-center" style="font-size:16px"><b>Direction and Orientation of the Motors is Important</b></p>
+					<br>
+					<br>
+					<img src="calibration.jpg" class="img-rounded" class="img-responsive" style="width:100%;height:auto" alt="Calibration Example">
+					<p class="text-center" style="font-size:16px"><b>Radio Calibration using Mission Planner</b></p>
+					<br>
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<h3 class="text-center">Generating 3D Models using Agisoft</h3>
+					<p style="font-size:16px">After downloading all of the images off of the SD card we would use Agisoft to generate a 3D model of the surveyed site. First all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, after which a mesh is created which has the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto which is a detailed 3D model. </p>
+					<div id="MissionCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#MissionCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#MissionCarousel" data-slide-to="1"></li>
+							<li data-target="#MissionCarousel" data-slide-to="2"></li>
+						</ol>
 
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active" align="middle">
+								<img src="mission1.jpg" alt="Creating Fence">
+								<div class="carousel-caption">
+									<h3>Step1:</h3>
+									<p>Create Fence</p>
+								</div>
+							</div>
+							<div class="item" align="middle">
+								<img src="mission2.jpg" alt="Generate Grid">
+								<div class="carousel-caption">
+									<h3>Step2:</h3>
+									<p>Generate Grid</p>
+								</div>
+							</div>
+							<div class="item" align="middle">
+								<img src="mission3.jpg" alt="Checking Waypoints">
+								<div class="carousel-caption">
+									<h3>Step3:</h3>
+									<p>Check Waypoints</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Left and Right Controls -->
+						<a class="left carousel-control" href="#MissionCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						 </a>
+						 <a class="right carousel-control" href="#MissionCarousel" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						 </a>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-5">
+					<h3 class="text-center">Generating 3D Models using Agisoft</h3>
+					<p style="font-size:16px">After downloading all of the images off of the SD card we would use Agisoft to generate a 3D model of the surveyed site. First all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, after which a mesh is created which has the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto which is a detailed 3D model. </p>
+					<div id="AgisoftCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#AgisoftCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#AgisoftCarousel" data-slide-to="1"></li>
+							<li data-target="#AgisoftCarousel" data-slide-to="2"></li>
+							<li data-target="#AgisoftCarousel" data-slide-to="3"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active" align="middle">
+								<img src="agisoft_step1.jpg" alt="Step1: Photo Alignment">
+								<div class="carousel-caption">
+									<h3>Step1:</h3>
+									<p>Photo Alignment</p>
+								</div>
+							</div>
+							<div class="item" align="middle">
+								<img src="agisoft_step2.jpg" alt="Step2: Dense Point Cloud">
+								<div class="carousel-caption">
+									<h3>Step2:</h3>
+									<p>Dense Point Cloud</p>
+								</div>
+							</div>
+							<div class="item" align="middle">
+								<img src="agisoft_step3.jpg" alt="Step3: Mesh">
+								<div class="carousel-caption">
+									<h3>Step3:</h3>
+									<p>Mesh</p>
+								</div>
+							</div>
+							<div class="item" align="middle">
+								<img src="agisoft_step4.jpg" alt="Step4: Orthophoto">
+								<div class="carousel-caption">
+									<h3>Step4:</h3>
+									<P>Orthophoto</P>
+								</div>
+							</div>
+						</div>
+
+						<!-- Left and Right Controls -->
+						<a class="left carousel-control" href="#AgisoftCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						 </a>
+						 <a class="right carousel-control" href="#AgisoftCarousel" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						 </a>
+					</div>
+				</div>
+			</div>
 
 		<div class="container-fluid">
 			<div class="well">
