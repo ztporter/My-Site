@@ -45,7 +45,7 @@
 				<div class="col-sm-8">
 					<h1>Coding Projects</h1>
 					<p style="font-size:16px">I started off programming in high school when I took an AP computer science class in Java, and now I've picked up several other languages through college. I'm most experienced in C++, Python, C, and HTML but I've also written scripts in Ruby, Javascript, Coffeescript, and Rails. For embedded systems I've mainly programmed ARM processors using the KEIL uVision IDE which uses either C or assembly (depending on how difficult you want to make it for yourself.) In addition to my classwork I've also written several scripts and programs just for personal pleasure. There's a hubot script in Coffeescript that searches Yelp for some tasty local food, a couple Risk simulators in Python so that you can make more informed decisions as a top general, a large "Nethack-ish" style game in C++ that has lots of different dungeons and a strange Zombie Bear theme, a hangman game in Python, the code for this site, and some other random scripts that I wrote so that I could try to not forget how to code. You can check out all of these and more on my Github page.</p>
-					<p><a class="btn btn-primary" href="https://github.com/ztporter" role="button"><span class="glyphicon glyphicon-cloud"></span> My Github</a></p>
+					<p><a class="btn btn-primary" href="https://github.com/ztporter" target="_blank" role="button"><span class="glyphicon glyphicon-cloud"></span> My Github</a></p>
 				</div>
 			</div>
 			<br>
@@ -142,7 +142,7 @@
 				</div>
 				<div class="col-md-6">
 					<h3 class="text-center">3D Printed Parts</h3>
-					<p style="font-size:16px">Our team had access to several MakerBot Replicator 2x's and we used SketchUp to create several parts used in our project including the GPS mast, prop guards, and the camera mount.</p>
+					<p style="font-size:16px">Our team had access to several MakerBot Replicator 2x's and we used SketchUp to create several parts used in our project including the GPS mast, prop guards, and camera mount.</p>
 					<div id="3DCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -240,15 +240,15 @@
 			<div class="row">
 				<div class="col-md-4">
 					<h3>Final Design</h3>
-					<p style="font-size:16px">After we had purchased/printed all of our parts we assembled the UAV according to the design diagram shown. Assembly involved soldering on the various connectors, revising models for the printed parts, securing all of the components to the frame,and a great deal of headache trying to get everything positioned and calibrated correctly. The process was made much easier by the excellent documentation provided by APM Copter which you can check out <a href="http://copter.ardupilot.com/wiki/common-autopilots/common-pixhawk-overview/">here</a>. Since there are many tutorials for assembling quadcopters I won't cover every step but some things to keep in mind are:</p>
+					<p style="font-size:16px">After we had purchased/printed all of our parts we assembled the UAV according to the design diagram shown. Assembly involved soldering on the various connectors, revising models for the printed parts, securing all of the components to the frame,and a great deal of headache trying to get everything positioned and calibrated correctly. The process was made much easier by the excellent documentation provided by APM Copter which you can check out <a href="http://copter.ardupilot.com/wiki/common-autopilots/common-pixhawk-overview/" target="_blank">here</a>. Since there are many tutorials for assembling quadcopters I won't cover every step but some things to keep in mind are:</p>
 						<ul style="font-size:16px">
-							<li>There are two different types of props, that spin different directions</li>
-							<li>Switching any two wires going from the ESC's to the motors changes there direction</li>
-							<li>Mixing channels with the radio allows you to get more than 3 modes for one RC channel</li>
-							<li>Keeping the Pixhawk and GPS secured prevents constantly needing to recalibrate them</li>
-							<li>Buy more batteries and chargers than you think, you run through them quickly</li>
+							<li><div class="alert alert-info" role="alert">There are two different types of props, that spin different directions</div></li>
+							<li><div class="alert alert-info" role="alert">Switching any two wires going from the ESC's to the motors changes their direction</div></li>
+							<li><div class="alert alert-info" role="alert">Mixing channels with the radio allows you to get more than 3 modes for one RC channel</div></li>
+							<li><div class="alert alert-info" role="alert">Keeping the Pixhawk and GPS secured prevents constantly needing to recalibrate them</div></li>
+							<li><div class="alert alert-info" role="alert">Buy more batteries and chargers than you think, you run through them quickly</div></li>
 						</ul>
-					<p style="font-size:16px">Also, we learned several important safety lessons from assembling and testing the quadcopter so here are some valuable lessons learned at our expense for your safety:</p>
+					<p style="font-size:16px">Also, we learned several important safety lessons from assembling and testing the quadcopter so here are some valuable lessons (learned at our expense) for your safety:</p>
 						<ul>
 							<li><div class="alert alert-danger" role="alert">Be extremely careful testing quadcopters, they are spinning death machines</div></li>
 							<li><div class="alert alert-danger" role="alert">Remove the propellers before calibrating ESC's and motors</div></li>
@@ -281,7 +281,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h3 class="text-center">Mission Planning and Execution</h3>
-					<p style="font-size:16px">Once the system is fully operational with all sensors on the UAV calibrated and all batteries fully charged Rexacopter is ready for its mission. The Mission Planner software makes planning an autonomous flight very straightforward with its Survey Grid tool. To start, create a fence around the desired area using the polygon tool, then using that as the boundary the survey grid tool can create all the waypoints we need to work a grid at a specified height of 9m and distance between lines of 6m. Once all the waypoints are generated a quick check to remove all unnecessary commands like take picture or loiter and adding a return to launch command are all that's necessary to finish the flight plan. With this finalized the waypoints get written to the UAV, and it will carry out the mission as soon as it's placed in auto mode.</p>
+					<p style="font-size:16px">Once the system is fully operational with all sensors on the UAV calibrated and all batteries fully charged Rexacopter is ready for its mission. The Mission Planner software makes planning an autonomous flight very straightforward with its Survey Grid tool. To start, create a fence around the desired area using the polygon tool, then using that as the boundary the survey grid tool can create all the waypoints we need to work a grid at a specified height of 9m and a distance between grid lines of 6m. Once all the waypoints are generated, a quick check to remove all unnecessary commands (like take picture or loiter) and adding a return to launch command are all that's necessary to finish the flight plan. With this finalized, the waypoints get written to the UAV, and it will carry out the mission as soon as it's placed into auto mode.</p>
 					<div id="MissionCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -329,7 +329,7 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-5">
 					<h3 class="text-center">Generating 3D Models using Agisoft</h3>
-					<p style="font-size:16px">After downloading all of the images off of the SD card we would use Agisoft to generate a 3D model of the surveyed site. First all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, after which a mesh is created which has the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto which is a detailed 3D model. </p>
+					<p style="font-size:16px">After downloading all of the images off of the SD card we use Agisoft to generate a 3D model of the surveyed site. First, all of the photos are aligned relative to one another, then a dense point cloud is generated containing overlapping points of contrast from the photos, next a mesh is created which shows the dimensions of the area, and finally the picture data is layed on top of the mesh to create the orthophoto, which is a detailed 3D model. </p>
 					<div id="AgisoftCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
